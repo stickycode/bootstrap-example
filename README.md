@@ -7,18 +7,18 @@ Examples for using the StickyCode bootstrap-maven-plugin to create application a
 
 The plugin is available on [maven central](http://repo1.maven.org/maven2/net/stickycode/plugins/).
 
-  <plugin>
-    <groupId>net.stickycode.plugins</groupId>
-    <artifactId>bootstrap-maven-plugin</artifactId>
-    <version>1.9</version>
-    <executions>
-      <execution>
-        <goals>
-          <goal>project</goal>
-        </goals>
-      </execution>
-    </executions>
-  </plugin>
+    <plugin>
+      <groupId>net.stickycode.plugins</groupId>
+      <artifactId>bootstrap-maven-plugin</artifactId>
+      <version>1.9</version>
+      <executions>
+        <execution>
+          <goals>
+            <goal>project</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
 
 
 # Single Project with main
