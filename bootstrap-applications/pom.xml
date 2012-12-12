@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 2012 RedEngine Ltd, http://www.redengine.co.nz. All rights reserved. -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<parent>
+		<groupId>net.stickycode.parent</groupId>
+		<artifactId>sticky-jar</artifactId>
+		<version>1.22</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>net.stickycode.deploy.bootstrap.example</groupId>
+	<artifactId>sticky-boostrap-applications</artifactId>
+	<version>0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>${project.artifactId}-1</name>
+
+	<inceptionYear>2012</inceptionYear>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.stickycode.deploy.sample</groupId>
+			<artifactId>sticky-deployer-sample-main</artifactId>
+			<version>1.2</version>
+		</dependency>
+	</dependencies>
+
+
+
+	<build>
+		<plugins>
+			<!-- Create a jar with a main class and a description -->
+			<plugin>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>net.stickycode.deploy.example.bootstrap.Booted</mainClass>
+							<packageName>Example class which prints a boot sequence based on arguments</packageName>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+
+
+			<!-- Create a bootstrap jar that contains the project jar -->
+			<plugin>
+				<groupId>net.stickycode.plugins</groupId>
+				<artifactId>bootstrap-maven-plugin</artifactId>
+				<version>1.9</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>project</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+
+	</build>
+</project>
+
