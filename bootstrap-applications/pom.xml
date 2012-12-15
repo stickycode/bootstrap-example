@@ -43,7 +43,7 @@
 			</plugin>
 
 
-			<!-- Create a bootstrap jar that contains the project jar -->
+			<!-- Create a bootstrap jar that contains the project jar and dependencies -->
 			<plugin>
 				<groupId>net.stickycode.plugins</groupId>
 				<artifactId>bootstrap-maven-plugin</artifactId>
