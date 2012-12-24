@@ -63,10 +63,13 @@ In this case you are assembling and application from a number of jars with mains
   > No command was specified
   >
   > Usage: java -jar /home/michael/working/bootstrap-example/bootstrap-applications/target/sticky-boostrap-applications-0.1-SNAPSHOT-bootstrap.jar Command arg1 arg2 arg3
+  >
   > Booted - Example class which prints a boot sequence based on arguments
   > HelloWorld - N/A
 
 ## Specifying the Booted command
+
+  This one just prints out the string you pass in one letter at a time or counts up to the number given with a pause between
 
     java -jar bootstrap-applications/target/sticky-boostrap-applications-0.1-SNAPSHOT-bootstrap.jar Booted
 
@@ -75,7 +78,10 @@ In this case you are assembling and application from a number of jars with mains
 
 ## Running the HelloWorld command with an argument
 
+  This one prints out the vector of position and count up to the number given with a pause between
+
     java -jar bootstrap-applications/target/sticky-boostrap-applications-0.1-SNAPSHOT-bootstrap.jar HelloWorld 2 
+
   > This is not a number HelloWorld
   > Hello world (1,0)!
   > Hello world (1,1)!
