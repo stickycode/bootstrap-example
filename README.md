@@ -65,6 +65,7 @@ In this case you are assembling and application from a number of jars with mains
   > Usage: java -jar /home/michael/working/bootstrap-example/bootstrap-applications/target/sticky-boostrap-applications-0.1-SNAPSHOT-bootstrap.jar Command arg1 arg2 arg3
   >
   > Booted - Example class which prints a boot sequence based on arguments
+  >
   > HelloWorld - N/A
 
 ## Specifying the Booted command
